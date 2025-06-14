@@ -1,5 +1,4 @@
-
-import { CheckCircle, BookOpen, UserCheck, Users, Star, Layers, HeartHandshake, Sliders, Clock, GraduationCap, LineChart } from "lucide-react";
+import { CheckCircle, BookOpen, UserCheck, Users, Star, Layers, HeartHandshake, Sliders, Clock, GraduationCap, LineChart, Phone, Mail } from "lucide-react";
 
 const FEATURES = [
   {
@@ -146,6 +145,56 @@ const Index = () => {
               <p className="text-sm text-gray-200">{desc}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* OUR SERVICES */}
+      <section className="container max-w-4xl py-8" id="services">
+        <h3 className="text-2xl font-bold text-center mb-6 text-brightGold">Our Services</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="bg-white/5 p-5 rounded-xl flex flex-col gap-2 shadow-md border border-brightGold/10">
+            <span className="font-semibold text-brightGold">Online Tutoring</span>
+            <span className="text-gray-200 text-sm">Get expert help from the comfort of your home via interactive online sessions.</span>
+          </div>
+          <div className="bg-white/5 p-5 rounded-xl flex flex-col gap-2 shadow-md border border-brightGold/10">
+            <span className="font-semibold text-brightGold">Private In-Person Tutoring</span>
+            <span className="text-gray-200 text-sm">Personalized lessons at your home, tailored to your child's learning needs.</span>
+          </div>
+          <div className="bg-white/5 p-5 rounded-xl flex flex-col gap-2 shadow-md border border-brightGold/10">
+            <span className="font-semibold text-brightGold">Exam Preparation</span>
+            <span className="text-gray-200 text-sm">Focused revision and strategies to help students excel in exams.</span>
+          </div>
+          <div className="bg-white/5 p-5 rounded-xl flex flex-col gap-2 shadow-md border border-brightGold/10">
+            <span className="font-semibold text-brightGold">Study Skills Coaching</span>
+            <span className="text-gray-200 text-sm">Develop effective study routines, time management, and note-taking skills.</span>
+          </div>
+        </div>
+      </section>
+
+      {/* CONTACT & ACTIONS */}
+      <section className="container max-w-4xl pb-8 pt-5 flex flex-col items-center gap-5" id="contact">
+        <h3 className="text-2xl text-brightGold font-bold mb-1">Contact BrightPath</h3>
+        <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+          <a href="tel:0753505817" className="flex items-center gap-2 px-4 py-2 bg-white/10 rounded-lg font-medium text-lg text-white hover:text-brightGold transition">
+            <Phone className="w-5 h-5 text-brightGold" /> 075 350 5817
+          </a>
+          <a href="mailto:BrightPath39@gmail.com" className="flex items-center gap-2 px-4 py-2 bg-white/10 rounded-lg font-medium text-lg text-white hover:text-brightGold transition">
+            <Mail className="w-5 h-5 text-brightGold" /> BrightPath39@gmail.com
+          </a>
+        </div>
+        <div className="flex flex-col sm:flex-row gap-3 mt-1">
+          <a
+            href="#booking"
+            className="rounded-full bg-brightGold text-brightDark px-7 py-2 font-semibold text-base shadow-md hover:bg-yellow-400 transition"
+          >
+            Online bookings
+          </a>
+          <a
+            href="#application"
+            className="rounded-full bg-brightGold text-brightDark px-7 py-2 font-semibold text-base shadow-md hover:bg-yellow-400 transition"
+          >
+            Tutoring application
+          </a>
         </div>
       </section>
 
